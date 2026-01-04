@@ -1,4 +1,4 @@
-package com.yanhezv.ledgerservice.controllers;
+package com.yanhezv.ledgerservice.infrastructure.web.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
