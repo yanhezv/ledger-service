@@ -17,4 +17,12 @@ repositories {
 
 dependencies {
     implementation(libs.spring.boot.starter.web)
+
+    testImplementation(libs.spring.boot.starter.test)
+}
+
+tasks {
+    withType<Test> {
+        useJUnitPlatform()
+    }
 }
