@@ -10,14 +10,14 @@ class CurrencyTest {
     @Test
     void shouldCreateValidCurrency() {
         Currency usd = Currency.of("USD");
-        assertEquals("USD", usd.getCode());
+        assertEquals("USD", usd.code());
         assertEquals("USD", usd.toString());
     }
 
     @Test
     void shouldNormalizeCurrency() {
         Currency usd = Currency.of(" usd ");
-        assertEquals("USD", usd.getCode());
+        assertEquals("USD", usd.code());
     }
 
     @Test

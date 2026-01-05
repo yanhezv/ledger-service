@@ -28,7 +28,7 @@ public final class Currency {
         return new Currency(normalized);
     }
 
-    public String getCode() {
+    public String code() {
         return code;
     }
 

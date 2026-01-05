@@ -16,8 +16,8 @@ class MoneyTest {
     void shouldCreateValidMoney() {
         Money money = Money.of(BigDecimal.valueOf(100), usd);
 
-        assertEquals(BigDecimal.valueOf(100), money.getAmount());
-        assertEquals(usd, money.getCurrency());
+        assertEquals(BigDecimal.valueOf(100), money.amount());
+        assertEquals(usd, money.currency());
         assertEquals("100 USD", money.toString());
     }
 
@@ -46,8 +46,8 @@ class MoneyTest {
 
         Money result = a.add(b);
 
-        assertEquals(BigDecimal.valueOf(80), result.getAmount());
-        assertEquals(usd, result.getCurrency());
+        assertEquals(BigDecimal.valueOf(80), result.amount());
+        assertEquals(usd, result.currency());
     }
 
     @Test
@@ -69,7 +69,7 @@ class MoneyTest {
 
         Money result = a.subtract(b);
 
-        assertEquals(BigDecimal.valueOf(70), result.getAmount());
+        assertEquals(BigDecimal.valueOf(70), result.amount());
     }
 
     @Test

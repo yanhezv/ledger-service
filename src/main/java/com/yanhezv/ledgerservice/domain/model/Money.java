@@ -26,11 +26,11 @@ public final class Money {
         return new Money(amount, currency);
     }
 
-    public BigDecimal getAmount() {
+    public BigDecimal amount() {
         return amount;
     }
 
-    public Currency getCurrency() {
+    public Currency currency() {
         return currency;
     }
 
