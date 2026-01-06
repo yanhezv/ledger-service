@@ -13,7 +13,7 @@ public class CreateTransactionUseCase {
     private final TransactionRepository repository;
 
     public CreateTransactionUseCase(TransactionRepository repository) {
-        this.repository = Objects.requireNonNull(repository);
+        this.repository = Objects.requireNonNull(repository, "TransactionRepository cannot be null");
     }
 
     public Transaction execute(CreateTransactionCommand command) {
