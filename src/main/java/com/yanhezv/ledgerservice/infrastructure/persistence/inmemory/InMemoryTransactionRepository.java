@@ -1,4 +1,4 @@
-package com.yanhezv.ledgerservice.infrastructure.persistence;
+package com.yanhezv.ledgerservice.infrastructure.persistence.inmemory;
 
 import com.yanhezv.ledgerservice.application.port.TransactionRepository;
 import com.yanhezv.ledgerservice.domain.model.Transaction;
